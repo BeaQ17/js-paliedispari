@@ -49,13 +49,13 @@ console.log(randomNum(1, 5));
 
 function isEven (num, randomNum) {
     var sum = num + randomNum;
-    if (sum % 2 == 0, prompt == "pari") {
+    if (sum % 2 == 0 && choose == "pari") {
         return "Vince giocatore";
-    } else if (sum % 2 != 0, prompt == "pari"){
+    } else if (sum % 2 != 0 && choose == "pari"){
         return "Vince pc";
-    } else if (sum % 2 != 0, prompt == "dispari") {
+    } else if (sum % 2 != 0 && choose == "dispari") {
         return "Vince giocatore";
-    } else if (sum % 2 == 0, prompt == "dispari") {
+    } else if (sum % 2 == 0 && choose == "dispari") {
         return "Vince pc";
     }
          
