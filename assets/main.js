@@ -8,11 +8,11 @@ isPalindrome(word);
 //Crea una funzione per capire se la parola inserita è palindroma
 function isPalindrome (word) {
 
-    var stringToArray = word.split(''); //fai diventare la stringa un array
+    var stringToArray = word.split(""); //fai diventare la stringa un array
 
-    var reverseArray = stringToArray.reverse(); //inverti l'array
+    var reverseArray = stringToArray.reverse(""); //inverti l'array
 
-    var reverseBackString = reverseArray.join(''); //fai tornare l'array a una stringa
+    var reverseBackString = reverseArray.join(""); //fai tornare l'array a una stringa
 
     if(word == reverseBackString) {
         console.log("È palindroma");
@@ -27,11 +27,12 @@ function isPalindrome (word) {
 */
 
 
+
 //PARI O DISPARI
 //L'utente sceglie pari o dispari e inserisce un numero da 1 a 5
 var choose = prompt("Pari o dispari?");
 console.log(choose);
-var num = prompt("Scegli un numero intero tra 1 e 5:");
+var num = Number(prompt("Scegli un numero intero tra 1 e 5:"));
 console.log(num);
 
 //fare una funzione per generare un numero random per il computer
@@ -46,6 +47,7 @@ console.log(randomNum(1, 5));
 
 //fare una funzione per sommare i due numeri e stabilire se la somma è pari o dispari
 //dichiarare chi ha vinto
+var sum = num + randomNum;
 
 function isEven (num, randomNum) {
     var sum = num + randomNum;
